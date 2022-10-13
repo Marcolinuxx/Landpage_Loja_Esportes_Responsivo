@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcolino's little shop</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h1>Marcolino's little shop</h1>
+        <div class="botao-menu">
+        <button type="button">Clique para abrir o menu</button>
+        </div>
+        <nav>
+            <ul class="menu-mobile">
+                <li>
+                    <a href="#sobre-a-loja">SOBRE</a>  
+                </li>
+                <li>
+                    <a href="#produtos">PRODUTOS</a>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="menu-hamburguer">
+                <li>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#sobre-a-loja">SOBRE</a>
+                            </li>
+                            <li>
+                                <a href="#produtos">PRODUTOS</a>
+                            </li>
+                        </ul>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <article id="sobre-a-loja">
+                <img src="./img/fachada_loja.jpg" alt="interior de uma loja de artigos esportivos" />
+                <div>
+                <h2>Sobre a Loja</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quisquam et quis dolorem! Aperiam incidunt quo adipisci, dolor voluptatum atque commodi. Sed distinctio sunt consectetur aspernatur, facilis eum laboriosam voluptate.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cupiditate quas ea asperiores tempore quos alias eius ullam quia! Iure quasi magnam qui nostrum libero, omnis voluptates placeat provident vero.</p>
+                </div>
+        </article>
+    </section>
+    <main>
+    <section class="class-produtos" id="produtos">
+        <h2>Produtos</h2>
+        <article class="articles">
+            <ul>
+                <li>
+                    <img src="./img/camiseta_brasil_2.jpg" alt="camisa do brasil"/>
+                    <a href="#">
+                    <h3>Camisa Seleção Brasileira Oficial</h3>
+                    </a>
+                    <h4>Tamanhos P, M e G disponíveis</h4>
+                    <button type="button">+ Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    
+                    <img src="./img/camiseta_brasil_1.webp" alt="camisa do brasil"/>
+                    <a href="#">
+                    <h3>Camisa Seleção Brasileira Black Oficial</h3>
+                    </a>
+                    <h4>Tamanhos P e M disponíveis</h4>
+                    <button type="button">+ Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    
+                    <img src="./img/camiseta_brasil_3.jpg" alt="camisa do brasil"/>
+                    <a href="#">
+                    <h3>Camisa Seleção Brasileira Feminina Oficial</h3>
+                    </a>
+                    <h4>Tamanhos P e M disponíveis</h4>
+                    <button type="button">+ Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    
+                    <img src="./img/camiseta_brasil_4.jpg" alt="camisa do brasil"/>
+                    <a href="#">
+                    <h3>Camisa Seleção Brasileira Infantil Oficial</h3>
+                    </a>
+                    <h4>disponíveis nos tamanhos 6, 8, 12 e 14</h4>
+                    <button type="button">+ Adicionar ao carrinho</button>
+                </li>
+            </ul>
+        </article>
+        </div>
+    </section>
+    </main>
+
+    
+    <footer>
+        <div class="container">
+            <p>
+            2022 &copy; Marcolino' little shop - Todos os direitos reservados
+            </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu button').click(function() {
+            $('.menu-mobile').slideToggle();
+        })
+        })  
+    </script>  
+</body>
+</html>
+

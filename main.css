@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1024px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+h1 {
+    font-style: italic;
+    color: #fff;
+    font-size: 2.5em;
+}
+
+header {
+    background-color: rgb(4, 4, 92);
+}
+
+nav a {
+    padding: 3px;
+    margin: 0 8px;
+    text-decoration: none;
+    color: yellow;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 4px;
+    height: 2px;
+}
+
+.sub-menu {
+    display: none;
+    border-top: 4px solid yellow;
+    background-color: rgb(4, 4, 92);
+    border-radius: 8px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    padding: 10px;
+}
+
+.menu-hamburguer li:hover .sub-menu {
+    display: flex;
+}
+
+
+.sub-menu li {
+    margin: 5px 0;
+    cursor:auto;
+    list-style: none;
+}
+
+.sub-menu li:hover {
+    text-decoration: underline;
+}
+
+.articles li a {
+    text-decoration: none;
+}
+
+.articles li a:hover {
+    text-decoration: underline;
+}
+
+.menu-hamburguer> li {
+    padding: 35px 0;
+}
+
+#sobre-a-loja img {
+    height: 270px;
+    max-width: 100%;
+    margin-right: 60px;
+}
+#sobre-a-loja {
+    display: flex;
+    margin: 50px 0;
+}
+
+p {
+    color: rgb(2, 77, 2);
+}
+
+#sobre-a-loja h2 {
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(4, 4, 92);
+    color: rgb(2, 77, 2);
+}
+
+section {
+    padding: 3.5em;
+}
+
+.articles img {
+    height: 200px;
+}
+
+#produtos h2 {
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(4, 4, 92);
+    color: rgb(2, 77, 2);
+}
+
+.class-produtos {
+    margin: 0 auto;
+    width: 1024px;
+}
+#produtos {
+    display: block;
+}
+
+.articles li{
+    list-style: none;
+}
+
+.articles {
+    margin-top: 3.5em;
+    width: 230px;
+}
+
+section h3 {
+    color: rgb(2, 77, 2);
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+section h4 {
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.788);
+    margin-bottom: 6px;
+}
+
+.articles ul li button {
+    width: 100%;
+    padding: 10px;
+    font-style: italic;
+    font-size: 1em;
+    color: yellow;
+    background-color: rgb(2, 77, 2);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.articles ul li button:hover {
+    background-color: rgb(58, 139, 58);
+}
+
+.articles ul {
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+}
+
+.articles li {
+    margin-right: 10%;
+}
+
+footer {
+    background-color: rgb(4, 4, 92);
+    padding: 16px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.menu-mobile, .botao-menu {
+    display: none;
+}
+
+.menu-mobile li {
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .container, #sobre-a-loja, .articles ul, .sub-menu, .botao-menu {
+        display: block;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    .container button {
+        margin-top: 1em;;
+        margin-left: 7em;
+        padding: 6px;
+    }
+
+    .sub-menu, .menu-hamburguer {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 2em;
+        margin-left: 20px;
+    }
+
+    #produtos h2 {
+        max-width: 100%;
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #produtos {
+        max-width: 100%;
+    }
+
+    #produtos li {
+        margin-bottom: 50px;
+    }
+
+    .menu-mobile li {
+        list-style: none;
+        display: inline;
+        text-decoration: underline;
+    }
+
+    .menu-mobile {
+        display: none;
+        margin-left: 5em;
+        margin-top: 15px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container, #produtos {
+        max-width: 80%;
+    }
+
+    .articles ul {
+        display: grid;
+        grid-template-columns: repeat(2, 110%);
+    }
+
+    #sobre-a-loja {
+        display: block;
+    }
+
+    #sobre-a-loja h2 {
+        margin-top: 30px;
+    }
+
+    #produtos h2 {
+        width: 544px;
+        max-width: 100%;
+    }
+
+    h2 {
+        max-width: 100%;
+    }
+
+    #produtos li {
+        padding: 20px;
+    }
+
+    header button {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+}
+    
+
+
